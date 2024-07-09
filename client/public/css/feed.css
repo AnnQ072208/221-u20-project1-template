@@ -1,7 +1,7 @@
 header {
-	position: fixed;
+	position: left;
 	left:0px;
-	top: 0px;
+	top: 10px;
 	height: 60px;
 	width: 100%;
 
@@ -25,6 +25,7 @@ footer {
 	left: 0px;
   bottom: 0px;
 	width: 100%;
+	display: "Copyright &copy; 2020: Marist College est. 1929";
 	background-color: red;
 	text-align: center;
 	font-size: 20px;
@@ -36,16 +37,17 @@ footer {
 	top: 10px;
 }
 
+
 a {
-	color: blue;
+	color: red;
 	text-decoration: none;
 }
 
 #redfox{
-	position: relative;
+	position: ;
 	float: left;
-	height: 50px;
-	bottom: 5px;
+	height: 2px;
+	bottom: 2px;
 }
 
 #newsfeed {
