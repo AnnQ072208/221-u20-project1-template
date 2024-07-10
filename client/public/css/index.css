@@ -1,5 +1,6 @@
 body {
-	
+  background-image: url(../images/campus.png);
+  background-repeat: no-repeat;
 }
 
 #splash_title {
@@ -23,4 +24,5 @@ body {
 .background_button {
     border-radius: 12px;
     padding: 16px 20px;
+
 }
