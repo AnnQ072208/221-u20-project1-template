@@ -9,22 +9,22 @@ document.addEventListener('DOMContentLoaded', function() {
 let currentStories = [];
 
 currentStories.push({
-    Title: "Marist Story 1",
-    Body: "This is the body of Marist Story 1.",
-    linkUrl: "https://example.com/story1",
-    imageUrl: "images/campus.png"
+    Title: "Marist at Night",
+    Body: "Security, Safety, and Relaxing Scenery",
+    linkUrl: "https://www.hufsd.edu/assets/images/2020/may/banner-18a.jpg",
+    imageUrl: "images/night.png"
 });
 
 currentStories.push({
-    Title: "Marist Story 2",
-    Body: "This is the body of Marist Story 2.",
+    Title: "Generous Donation",
+    Body: "Famous Alumni donates $100,000 to Marist College!",
     linkUrl: "https://example.com/story2",
     imageUrl: "images/news_pic.jpg"
 });
 
 currentStories.push({
-    Title: "Marist Story 3",
-    Body: "This is the body of Marist Story 3.",
+    Title: "Hancock Center",
+    Body: "NECSD Computer Science Pathway Summer Program",
     linkUrl: "https://example.com/story3",
     imageUrl: "images/hancock.jpeg"
 });
