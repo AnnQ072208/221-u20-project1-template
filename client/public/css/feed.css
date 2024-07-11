@@ -83,6 +83,10 @@ a {
 
 
 }
+.myClass{
+	color: rgb(0, 170, 200);
+	text-decoration:none;
+}
 body {
 	background-image: url(../images/sky.png);
 	background-repeat: no-repeat;
