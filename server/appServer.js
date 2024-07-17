@@ -13,7 +13,6 @@ app.get('/feed', function(req, res) {
 //API endpoints
 
 const feedRoutes = require('./route/feedRoutes');
-app.use('/api/users', feedRoutes);
-
+app.use('/api', feedRoutes);
 
 app.listen(1337, () => console.log('Listening on port 1337.'))

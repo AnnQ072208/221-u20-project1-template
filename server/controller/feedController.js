@@ -1,6 +1,9 @@
 const FeedItem = require('../model/feedItem');
 
 let feedItems = [];
+let one = FeedItem.createFeedItem(1, "title", "body", "linkUrl","imageUrl");
+feedItems.push(one);
+console.log(feedItems);
 let currentId = 1;
 
 exports.getAllFeedItems = (req, res) => {
@@ -8,7 +11,7 @@ exports.getAllFeedItems = (req, res) => {
     res.send(feedItems);
 };
 
-exports.createFeedItem = (req, res) => {
+exports.createFeedItems = (req, res) => {
     const { title, body, linkUrl, imageUrl } = req.body;
     const newFeedItem = new FeedItem(currentId++, title, body, linkUrl, imageUrl);
     feedItems.push(newFeedItem);
@@ -16,7 +19,7 @@ exports.createFeedItem = (req, res) => {
     res.status(201).send(newFeedItem);
 };
 
-exports.getFeedItemById = (req, res) => {
+exports.getFeedItemsById = (req, res) => {
     const { id } = req.params;
     const feedItem = feedItems.find(item => item.id === parseInt(id));
     if (feedItem) {
@@ -27,7 +30,7 @@ exports.getFeedItemById = (req, res) => {
     }
 };
 
-exports.updateFeedItem = (req, res) => {
+exports.updateFeedItems = (req, res) => {
     const { id } = req.params;
     const { title, body, linkUrl, imageUrl } = req.body;
     let feedItem = feedItems.find(item => item.id === parseInt(id));
@@ -43,7 +46,7 @@ exports.updateFeedItem = (req, res) => {
     }
 };
 
-exports.deleteFeedItem = (req, res) => {
+exports.deleteFeedItems = (req, res) => {
     const { id } = req.params;
     const index = feedItems.findIndex(item => item.id === parseInt(id));
     if (index !== -1) {

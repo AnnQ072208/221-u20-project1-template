@@ -7,7 +7,6 @@ class FeedItem {
         this.imageUrl = imageUrl;
     }
 }
-
-exports.createUser = function(id, title, body, linkUrl, imageUrl) {
-    return new user(id, title, body, linkUrl, imageUrl);
+exports.createFeedItem = function(id, title, body, linkUrl, imageUrl) {
+    return new FeedItem(id, title, body, linkUrl, imageUrl);
   };
