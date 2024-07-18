@@ -1,12 +1,11 @@
 class FeedItem {
-    constructor(id, title, body, linkUrl, imageUrl) {
-        this.id = id;
+    constructor(title, body, linkUrl, imageUrl) {
         this.title = title;
         this.body = body;
         this.linkUrl = linkUrl;
         this.imageUrl = imageUrl;
     }
 }
-exports.createFeedItem = function(id, title, body, linkUrl, imageUrl) {
-    return new FeedItem(id, title, body, linkUrl, imageUrl);
-  };
+exports.createFeedItem = function(title, body, linkUrl, imageUrl) {
+    return new FeedItem(title, body, linkUrl, imageUrl);
+};

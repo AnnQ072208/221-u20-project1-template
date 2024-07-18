@@ -41,7 +41,7 @@ function displayItemHTML(feedItem) {
             </a>
             <hr>
         </div>
-    `;
+    `
     newsfeedElement.innerHTML += itemHTML;        
 }
 

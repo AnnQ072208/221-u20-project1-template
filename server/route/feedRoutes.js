@@ -1,14 +1,16 @@
 const express = require('express');
-const feedController = require('../controller/feedController');
-
 const router = express.Router();
 
-router.get('/feedItems', feedController.getAllFeedItems);
-router.post('/feed', feedController.createFeedItems);
-router.get('/feed/:id', feedController.getFeedItemsById);
-router.put('/feed/:id', feedController.updateFeedItems);
-router.delete('/feed/:id', feedController.deleteFeedItems);
+let feedController = require("../controller/feedController");
 
+router.route('/feed')
+    .get(feedController.getfeedItems)
+    .post(feedController.saveItem);
+   
+
+router.route('/feed/:itemId')
+    .get(feedController.getFeedItemsById)
+    .patch(feedController.updateItem)
+    .delete(feedController.deleteItem)
+    .put(feedController.saveItem)
 module.exports = router;
-
-
